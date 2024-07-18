@@ -8,20 +8,3 @@ final themeProvider = StateProvider((ref) => false);
 final colorListProvider = Provider((ref) => colorList);
 
 final selecterColorProvider = StateProvider((ref) => 0);
-
-final themeNotifierProvider = StateNotifierProvider<ThemeNotifier, AppTheme>(
-  (ref) => ThemeNotifier(),
-);
-
-//controller o notifier
-class ThemeNotifier extends StateNotifier<AppTheme> {
-  ThemeNotifier() : super(AppTheme());
-
-  void toggleDarkmode() {
-    state = state.copyWith(isDarkMode: !state.isDarkMode);
-  }
-
-  void changedColorIndex(int colorsIndex) {
-    state = state.copyWith(selecterColor: colorsIndex);
-  }
-}

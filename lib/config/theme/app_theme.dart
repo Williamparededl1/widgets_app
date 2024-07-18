@@ -26,8 +26,4 @@ class AppTheme {
       brightness: isDarkMode ? Brightness.dark : Brightness.light,
       colorSchemeSeed: colorList[selecterColor],
       appBarTheme: const AppBarTheme(centerTitle: false));
-
-  AppTheme copyWith({int? selecterColor, bool? isDarkMode}) => AppTheme(
-      selecterColor: selecterColor ?? this.selecterColor,
-      isDarkMode: isDarkMode ?? this.isDarkMode);
 }
