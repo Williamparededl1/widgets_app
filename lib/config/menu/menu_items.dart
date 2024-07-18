@@ -63,5 +63,5 @@ const List<MenuItems> appMenuItems = [
       title: 'Aplication Theme',
       subTitle: 'Temas de la Aplicacion',
       link: '/theme',
-      icon: Icons.image_aspect_ratio_sharp),
+      icon: Icons.color_lens),
 ];
