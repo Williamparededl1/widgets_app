@@ -59,4 +59,9 @@ const List<MenuItems> appMenuItems = [
       subTitle: 'Listas infinitas y recargables',
       link: '/infinite',
       icon: Icons.image_aspect_ratio_sharp),
+  MenuItems(
+      title: 'Aplication Theme',
+      subTitle: 'Temas de la Aplicacion',
+      link: '/theme',
+      icon: Icons.image_aspect_ratio_sharp),
 ];
